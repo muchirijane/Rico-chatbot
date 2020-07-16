@@ -1,5 +1,5 @@
 # Rico-chatbot-app
-## Live Code - [Preview](https://muchirijane.github.io/100-days-website/)
+## Live Code - [Preview](https://muchirijane.github.io/Rico-chatbot/)
 <!-- ctrl+shift+v : preview -->
 ![Project Image](img/day-16.gif)
 
@@ -17,7 +17,7 @@ You're sections headers will be used to reference location of destination.
 
 ---
 
-## Live Code - [Preview](https://muchirijane.github.io/100-days-website/)
+## Live Code - [Preview](https://muchirijane.github.io/Rico-chatbot/)
 
 ## Description
 
@@ -28,7 +28,8 @@ This is a project I created as I learned JavaScript. I went through Mozilla's do
 - HTML
 - CSS
 - SASS
-- Vanilla JAVASCRIPT
+- VANILLA JAVASCRIPT
+- WEB SPEECH API
 
 
 [Back To The Top](Rico-chatbit-app)
