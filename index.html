@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jane Tracy Muchiri">
+    <meta name="description" content ="Rico the dev assist is a javascript chatbot that get you basic web development resources.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
+    <title>Chatbot app</title>
+</head>
+<body>
+        
+        <header class="header-chat">
+
+            <div class="toggle">
+                <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
+                <label for="checkbox" class="label toggle-button">
+                    <i class="toggle-icon toggle-icon__moon fas fa-moon"></i>
+                    <i class="toggle-icon toggle-icon__sun fas fa-sun"></i>
+                    <div class="ball"></div>
+                </label>
+            </div>
+
+            <h1 class="header-chat__title">Have a chat with Rico</h1>
+        </header>
+    <main class="container">
+
+        <section class="chatUser__img">
+            <div class="chatUser__phone">
+                <img src="img/phone-case.svg" alt="phone case" class="chatUser__phone--case">
+                <img src="img/female_avatar.svg" alt="female avatar" class="chatUser__phone--femaleAvatar" id ="female-avatar">
+            </div>
+        </section>
+
+        <div class="chatarea-main">
+            <div class="chatarea">
+                <h2 class=" chatarea__textbase chatarea__info">To get started try saying, "<span class="text-animated"></span>"</h2> 
+                
+            </div>
+        </div>
+
+        <section class="chatbot__img">
+            <div class="chatbot__phone">
+                <img src="img/phone-case.svg" alt="phone case" class="chatbot__phone--case">
+               <div class="chatbot__body">
+                    <img src="img/robot-face.svg" alt="robot face" class="chatbot__face" id = "chatbot-face">
+                    <img src="img/robot-body.svg" alt="robot body" class="chatbot__circle-body" id = "chatbot-body">
+                    <img src="img/robot-shadow.svg" alt="robot shadow" class="chatbot__shadow">
+               </div>
+            </div>
+        </section>
+
+        <button class="chatmic">
+            <i class="fas fa-microphone chatmic__icon"></i>
+        </button>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+    <script src="scripts/typed.js"></script>
+    <script src="scripts/animation.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

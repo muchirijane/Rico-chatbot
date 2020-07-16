@@ -1,0 +1,99 @@
+//toggle
+.label{
+    height: 6.3rem;
+    width: 6.3rem;
+    border-radius: 50%;
+    background: var(--color-toggle);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.toggle{ 
+    margin: -3rem 60rem 2rem 5rem;
+    @media only screen and (max-width: $destop){
+        margin-right: 50rem;
+    }
+    @media only screen and (max-width: $laptop){
+        margin-right: 40rem;
+    }
+    @media only screen and (max-width: $ipad){
+        margin-right: 30rem;
+    }
+    @media only screen and (max-width: $sm-ipad){
+        margin-right: 20rem;
+    }
+    @media only screen and (max-width: $bg-phone){
+        margin-right: 14rem;
+    }
+    @media only screen and (max-width: $md-phone){
+        margin-right: 10rem;
+    }
+    @media only screen and (max-width: $sm-phone){
+        margin-right: 5rem;
+    }
+}
+.toggle-icon {
+    color: var(--color-yellow);
+
+    &__moon{
+        opacity: 0;
+        visibility: hidden;
+        color: var(--color-moon);
+    }
+    &__sun{
+        margin-left: -3rem;
+        color: var(--color-sun);
+    }
+
+    @media only screen and (max-width: $destop){
+        font-size: 3rem;
+    }
+}
+.checkbox{ 
+    visibility: hidden;
+    opacity: 0;
+}
+
+.checkbox:checked + .label .toggle-icon__moon{
+    visibility: visible;
+    opacity: 1;
+}
+
+.checkbox:checked + .label .toggle-icon__sun{
+    visibility: hidden;
+    opacity: 0;
+}
+
+//header
+.header-chat{
+    display: flex;
+    align-items: center;
+    background-color: var(--color-header);
+    color: var(--color-black);
+    box-shadow: var(--header-shadow);
+    height: 10rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+
+    &__title{
+        font-weight: 300;
+        font-size: 6.4rem;
+
+        @media only screen and (max-width: $sm-ipad){
+            font-size: 5.6rem;
+        }
+
+        @media only screen and (max-width: $bg-phone){
+            font-size: 4rem;
+        }
+        @media only screen and (max-width: $md-phone){
+            font-size: 3rem;
+        }
+        @media only screen and (max-width: $sm-phone){
+            font-size: 2.5rem;
+        }
+    }
+}

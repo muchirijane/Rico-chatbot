@@ -1,0 +1,44 @@
+.chatUser{
+    &__img{
+        margin-top: 14rem;
+
+    }
+    &__phone{
+        position: fixed;
+
+        &--case{
+            position: absolute;
+            height: 66rem;
+
+            @media only screen and (max-width: $destop){
+                height: 60rem;
+            }
+            // @media only screen and (max-width: $laptop){
+            //     height: 50rem;
+            // }
+            @media only screen and (max-width: $mini-laptop){
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+        &--femaleAvatar{
+            position: absolute;
+            top: 70%;
+            left: 50%;
+            transform: translate(15%, 70%);
+            height: 25rem;
+
+            @media only screen and (max-width: $ipad){
+                height: 15rem;
+            }
+            @media only screen and (max-width: $bg-phone){
+                height: 10rem;
+            }
+            @media only screen and (max-width: $md-phone){
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+
+}

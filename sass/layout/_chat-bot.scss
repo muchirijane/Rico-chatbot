@@ -1,0 +1,99 @@
+.chatbot{
+    &__img{
+        //position: fixed;
+        margin-top: 14rem;
+    }
+    &__phone{
+        position: fixed;
+        
+
+        &--case{
+            height: 66rem;
+            @media only screen and (max-width: $destop){
+                height: 60rem;
+            }
+            // @media only screen and (max-width: $laptop){
+            //     height: 50rem;
+            // }
+            @media only screen and (max-width: $mini-laptop){
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &__body{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+        transform: translate(10%, -40%);
+        height: 20rem;
+        @media only screen and (max-width: $destop){
+            height: 10rem;
+            left: 4%;
+            top: 50%;
+        }
+        @media only screen and (max-width: $mini-laptop){
+            height: 40rem;
+            width: 40rem;
+            background-color: var(--dark-gray);
+            border-radius: 50%;
+            top: 70%;
+        }
+    }
+
+    &__circle-body {
+        @media only screen and (max-width: $destop){
+            height: 25rem;
+        }
+        @media only screen and (max-width: $mini-laptop){
+            position: absolute;
+            top: 17%;
+        }
+        @media only screen and (max-width: $ipad){
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &__shadow{
+        @media only screen and (max-width: $destop){
+            width: 25rem;
+        }
+        @media only screen and (max-width: $mini-laptop){
+            opacity: 0;
+            visibility: hidden;
+        }
+
+    }
+
+    &__face{
+        position: absolute;
+        top: -19rem;
+        left: -2.5rem;
+        @media only screen and (max-width: $destop){
+            height: 15rem;
+            left: -1.2rem;
+        }
+        @media only screen and (max-width: $mini-laptop){
+            top: -22%;
+        }
+        @media only screen and (max-width: $ipad){
+            left: -15%;
+            height: 12rem;
+        }
+        @media only screen and (max-width: $sm-ipad){
+            height: 10rem;
+        }
+        @media only screen and (max-width: $bg-phone){
+            height: 6rem;
+        }
+        @media only screen and (max-width: $md-phone){
+            visibility: hidden;
+            opacity: 0;
+        }
+        
+        
+    }
+}
+

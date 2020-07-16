@@ -1,0 +1,112 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+//breaking points
+$destop: 90em; //1440px
+$laptop: 75rem; //1200px
+$mini-laptop: 68.75em; //1100px
+$ipad: 56.25em; //900px
+$sm-ipad: 48em; //768px
+$bg-phone: 37.5em; //600px
+$md-phone: 31.25em; //500px
+$phone: 25em; //400px
+$sm-phone: 20em; //320px
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    @media only screen and (max-width: $destop){
+        font-size: 55%;
+    }
+    @media only screen and (max-width: $laptop){
+        font-size: 48%;
+    }
+    @media only screen and (max-width: $laptop){
+        font-size: 44%;
+    }
+    @media only screen and (max-width: $bg-phone){
+        font-size: 42%;
+    }
+    @media only screen and (max-width: $md-phone){
+        font-size: 38%;
+    }
+}
+
+:root{
+    --background-color: #F0EBEB;
+    --dark-blue: #323145;
+    --color-lime: #4AECDF;
+    --color-white: #ffff;
+    --color-toggle: #2B2A3B;
+    --color-sun: #EAEF01;
+    --color-moon: #DAAB04;
+    --color-header: #EDECEC;
+    --color-black: #222222;
+    --header-shadow: 0px 4px 4px rgba(172, 172, 172, 0.25);
+    --disabled-mic: #c4c4c4;
+    --active-mic: #4AECDF;
+    --bot-textcolor: #323145;
+    --user-textcolor: #fff;
+    --dark-gray: ##c4c4c4;
+    --color-gray: #7c7c7c;
+}
+
+.darkmode{
+    --background-color: #46445F;
+    --dark-blue: #323145;
+    --color-lime: #4AECDF;
+    --color-white: #ffff;
+    --color-toggle: #2B2A3B;
+    --color-moon: #DAAB04;
+    --color-header: #C4C4C4;
+    --header-shadow:  0px 4px 4px rgba(0, 0, 0, 0.25);
+    --disabled-mic: #c4c4c4;
+    --active-mic: #4AECDF;
+    --bot-textcolor: #323145;
+    --user-textcolor: #fff;
+    --dark-gray: ##c4c4c4;
+    --color-gray: #7c7c7c;
+}
+
+body{
+    line-height:  1.6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background: var(--background-color);
+    font-size: 2.6rem;
+    min-height: 100vh;
+    @media only screen and (max-width: $destop){
+        font-size: 2.4rem;
+    }
+    @media only screen and (max-width: $md-phone){
+        font-size: 2.7rem;
+        line-height: 1.5;
+    }
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 8rem 5rem;
+    position: relative;
+
+    @media only screen and (max-width: $mini-laptop){
+        margin: 0 3rem;
+    }
+    @media only screen and (max-width: $ipad){
+        grid-template-columns: .5fr 2fr .5fr;
+        margin: 4rem 2rem;
+    }
+    @media only screen and (max-width: $bg-phone){
+        grid-template-columns: .3fr 2fr .3fr;
+    }
+    @media only screen and (max-width: $md-phone){
+        grid-template-columns: .1fr 2fr .1fr;
+        margin: 4rem 1rem;
+    }
+    
+}
