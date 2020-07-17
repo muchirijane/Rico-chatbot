@@ -37,13 +37,13 @@ This is a project I created as I learned JavaScript. I went through Mozilla's do
 ---
 
 ## How To Use
-```html
-    <p>Use a command Prompt and type : npm start</p>
+```JS
+    Use a command Prompt and type : npm start
 ```
 
 #### Installation
-```html
-    <p>Use a command Prompt and type : npm install</p>
+```JS
+    Use a command Prompt and type : npm install
 ```
  
 ## Author Info
